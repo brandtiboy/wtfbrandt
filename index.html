@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wtfbrandt.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="#artwork">artwork</a>
+        <a href="#about-me">about me</a>
+        <a href="#">contact</a>
+    </div>
+
+    <div class="wrapper">
+        <!-- ARTWORK SECTION -->
+        <div id="artwork" class="container">
+            <h2>ARTWORK</h2>
+
+            <div class="painting">
+                <p>FUCK COVID-19</p>
+                <img src="img/painting-1.jpg" alt="">
+            </div>
+
+            <div class="painting">
+                <p>AUUUCH</p>
+                <img src="img/painting-2.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div id="about-me" class="container">
+            <h2>ABOUT ME</h2>
+            <p id="small-p">Hey! My name is Frederik Brandt and i'm not a real artist, but i do try to make art.</p>
+        </div>
+
+        <!-- STUDIO -->
+        <div id="studio" class="studio__container">
+            <h2>STUDIO</h2>
+
+            <!-- Overlapping images -->
+            <div class="image-stack">
+                <div class="image-stack__item image-stack__item--top">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/texture-waves2.jpeg" alt="A portrait of a girl under hanging flowers.">
+                </div>
+                <div class="image-stack__item image-stack__item--bottom">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/portrait-1-cropped.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="container">
+            <h2>CONTACT</h2>
+
+            <!-- Contact form -->
+            <form action="/contact">
+                <p>
+                    <input type="text" name="full_name" placeholder="NAME">
+                </p>
+                <p>
+                    <input type="email" name="email" required placeholder="EMAIL">
+                </p>
+                <p>
+                    <label>MESSAGE</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    <button class="btn-send">send</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
